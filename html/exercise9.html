@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: 18px;
+    }
+    .title{
+        color: red;
+        text-align: center;
+        font-size: 40px;
+    }
+    table {
+        width: 100%;
+    }
+
+    table,
+    td,
+    th,
+    tr {
+        border: 1px solid red;
+        border-collapse: collapse;
+    }
+
+    td:nth-last-child(2),
+    td:last-child {
+        text-align: center;
+    }
+
+    th {
+        background-color: #cc0033;
+        color: white;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h2 class="title">Chương trình học nghành lập trình</h2>
+        <table class="table">
+            <tr>
+                <th rowspan="2">Nhóm học phần</th>
+                <th rowspan="2">Môn học</th>
+                <th colspan="2">Số tiết</th>
+
+            </tr>
+            <tr>
+                <th>Lý thuyết</th>
+                <th>Thực hành</th>
+            </tr>
+            <tr>
+                <td class="red" rowspan="6">Tin học văn phòng</td>
+                <td>Hệ điều hành windows</td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Sử dụng interne</td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Soạn thảo văn bản với MS Word</td>
+                <td>24</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Tạo trình diễn với MS powerpoint</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Xử lý số liệu với MS excel</td>
+                <td>24</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Tạo trang web với frontpage</td>
+                <td>9</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td class="red" rowspan="2">Ký thuât lập trình</td>
+                <td>Nhập môn lập trình</td>
+                <td>36</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Kỹ thuật lập trình</td>
+                <td>36</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="4">...</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

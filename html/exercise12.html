@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 18px;
+        color: green;
+    }
+    .wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    table {
+        width: 100%;
+        background-color: #90ee90;
+    }
+
+    table,
+    tr,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h2 class="title">Phiếu đăng ký tham gia chương trình khuyến mãi </h2>
+        <form action="" class="form">
+            <table>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone number</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Phái</td>
+                    <td>
+                        <label for="">nam</label>
+                        <input type="radio" name="Nam" value="nam" id="">
+                        <label for="">Nữ</label>
+                        <input type="radio" name="Nữ" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp</td>
+                    <td>
+
+                        <select name="" id="">
+                            <option value="">Giáo viên</option>
+                            <option value="">Sinh viên</option>
+                            <option value="">Kế toán</option>
+                            <option value="">Giáo viên</option>
+                            <option value="">Giáo viên</option>
+
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn sản phẩm tham gia</td>
+                    <td>
+
+                        <select multiple name="" id="">
+                            <option value="">Ken đánh răng</option>
+                            <option value="">Bột giặt</option>
+                            <option value="">Dầu gội đầu</option>
+                            <option value="">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số người dự đoán tham gia</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        <button onclick="handleClick()" id="btn">Đăng Ký</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        <div style="color: red;" class="message"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+       function handleClick() {
+            const btn = document.getElementById('btn');
+            const message = document.querySelector('.message');
+            message.innerHTML = "Bạn đã đăng ký thầnh công!!!"
+        }
+    </script>
+</body>
+
+</html>

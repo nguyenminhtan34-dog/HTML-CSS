@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 18px;
+        color: green;
+    }
+    .wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title {
+        text-align: center;
+        color: green;
+    }
+
+    table {
+        background-color: #90ee90;
+        width: 600px;
+    }
+    table,
+    tr,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    input {
+        outline: none;
+    }
+
+    .message{
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h2 class="title">Đăng ký du lịch</h2>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phone number</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td><input type="checkbox" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select name="" id="">
+                        <optgroup label="Miền Bắc">
+                            <option value="">Nha Trang-Đà Lạt</option>
+                            <option value="">Buôn Mê Thuộc-Gia Lai-Kontum</option>
+                        </optgroup>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input checked type="radio" name="" id="">
+                    <label for="">Máy bay</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Ô tô</label>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2">
+                    <fieldset style="width: 70%;position: relative;left: 50%;transform: translateX(-50%);" >
+                        <legend>Chọn sản phẩm tham gia</legend>
+                        <label for="">Người lớn</label>
+                        <input style="width: 25px;" type="text">
+                        <label for="">Trẻ em</label>
+                        <input style="width: 25px;" type="text">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                    <button onclick="handleClick()" id="btn">Đăng ký</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                    <div class="message"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function handleClick() {
+            const btn = document.getElementById('btn');
+            const message = document.querySelector('.message');
+            message.innerHTML = "Bạn đã đăng ký thầnh công!!!"
+        }
+
+    </script>
+</body>
+
+</html>
